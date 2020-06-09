@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>WareMa Platform Homepage - Hierarchy Demo</title>
+    <link rel="stylesheet" type="text/css" href="asset/vendor/jquery-easyui/themes/default/easyui.css">
+    <link rel="stylesheet" type="text/css" href="asset/vendor/jquery-easyui/themes/icon.css">
+    <script type="text/javascript" src="asset/vendor/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="asset/vendor/jquery-easyui/jquery.easyui.min.js"></script>
+    <style type="text/css">
+    	span{
+    	    height: 40px;
+    	    line-height: 40px;
+    	}
+    </style>
+</head>
+<body>
+    <h2>WareMa Platform</h2>
+    <div class="easyui-panel" style="padding:5px;">
+        <ul class="easyui-tree">
+        	<li>
+            	<span><b>前台页面</b></span>
+            	<ul>
+                    <li>
+                        <span><a target='_blank' href="./portal.php?c=home">首页</a></span>
+                    </li>
+                    <li>
+                        <span><a target='_blank' href="/portal.php?c=warranty">保修管理</a></span>
+                    </li>
+                    <li>
+                        <span><a target='_blank' href="/portal.php?c=repair">维修服务</a></span>
+                    </li>
+                    <li>
+                        <span><a target='_blank' href="/portal.php?c=bigdata">大数据</a></span>
+                    </li>
+                    <li data-options="state:'closed'">
+                        <span><a target='_blank' href="/portal.php?c=resources">产业资源</a></span>
+                        <ul>
+	                        <li>
+	                            <span><a target='_blank' href="/portal.php?c=resources">产业资源 / 首页</a></span>
+	                        </li>
+	                        <li>
+	                            <span>产业资源 / 保修厂家</span>
+	                            <ul>
+			                        <li>
+			                            <span><a target='_blank' href="/portal.php?c=resourcesS&v=provider">产业资源 / 保修厂家 / 列表页</a></span>
+			                        </li>
+			                        <li>
+			                            <span>产业资源 / 保修厂家 / 详情页</span>
+			                        </li>
+			                        <li>
+			                            <span>产业资源 / 保修厂家 / 添加页</span>
+			                        </li>
+			                    </ul>
+	                        </li>
+	                        <li  data-options="state:'closed'">
+	                            <span><a target='_blank' href="/portal.php?c=resourcesS&v=repair">产业资源 / 维修中心 / 列表页</a></span>
+	                            
+	                        </li>
+	                        <li  data-options="state:'closed'">
+	                            <span><a target='_blank' href="/portal.php?c=resourcesS&v=component">产业资源 / 物料设备 / 列表页</a></span>
+	                            
+	                        </li>
+	                        <li  data-options="state:'closed'">
+	                            <span><a target='_blank' href="/portal.php?c=resourcesS&v=logistic">产业资源 / 物流仓储 / 列表页</a></span>
+	                        </li>
+	                        <li  data-options="state:'closed'">
+	                            <span><a target='_blank' href="/portal.php?c=resourcesS&v=call">产业资源 / 客服服务 / 列表页</a></span>
+	                        
+	                        </li>
+	                        <li  data-options="state:'closed'">
+	                            <span><a target='_blank' href="/portal.php?c=resourcesS&v=recycle">产业资源 / 资源回收 / 列表页</a></span>
+	                        </li>
+	                    </ul>
+                    </li>
+					<li data-options="state:'closed'">
+					    <span>产业范例</span>
+					    <ul>
+					        <li>
+					            <span><a target='_blank' href="/portal.php?c=DataCenter">产业范例 / 数据中心</a></span>
+					        </li>
+					        <li>
+					            <span><a target='_blank' href="/portal.php?c=DataCenter">产业范例 / 零件供应</a></span>
+					        </li>
+					    </ul>
+					</li>
+					<li data-options="state:'closed'">
+					    <span>新闻页面</span>
+					    <ul>
+					        <li>
+					            <span><a target='_blank' href="/portal.php?c=news">新闻页面 / 新闻列表页</a></span>
+					        </li>
+					        <li>
+					            <span><a target='_blank' href="/portal.php?c=news&v=survey">新闻页面 / 新闻详情页</a></span>
+					        </li>
+					    </ul>
+					</li>
+                    
+                    <li  data-options="state:'closed'">
+                        <span>公告页面</span>
+                        <ul>
+	                        <li>
+	                            <span><a target='_blank' href="/portal.php?c=dynamic">公告页面 / 公告列表页</a></span>
+	                        </li>
+	                        <li>
+	                            <span><a target='_blank' href="/portal.php?c=dynamic&v=survey">公告页面 / 公告详情页</a></span>
+	                        </li>
+	                    </ul>
+                    </li>
+                    <li  data-options="state:'closed'">
+                        <span>关于我们</span>
+                        <ul>
+	                        <li>
+	                            <span><a target='_blank' href="/portal.php?c=info">关于我们 / 关于我们</a></span>
+	                        </li>
+	                        <li>
+	                            <span><a target='_blank' href="/portal.php?c=info&v=protocol">关于我们 / 服务协议</a></span>
+	                        </li>
+	                        <li>
+	                            <span>关于我们 / 常见问题</span>
+	                        </li>
+	                        <li>
+	                            <span>关于我们 / 联系我们</span>
+	                        </li>
+	                        <li>
+	                            <span>关于我们 / 站点地图</span>
+	                        </li>
+	                        <li>
+	                            <span>关于我们 / 收费标准</span>
+	                        </li>
+	                    </ul>
+                    </li>
+                </ul>
+        	</li>
+        	
+        	//厂家后台
+        	<li data-options="state:'closed'">
+            	<span><b>厂家后臺</b></span>
+            	<ul>
+                    <li  data-options="state:'closed'">
+                        <span>保修管理</span>
+                    </li>
+                    <li >
+                        <span>维修服务</span>
+                        <ul>
+	                        <li   data-options="state:'closed'">
+	                            <span>服务授权</span>
+	                            <ul>
+			                        <li data-options="state:'closed'">
+			                            <span>邀请维修中心</span>
+			                            <ul>
+					                        <li>
+					                            <span><a target='_blank' href="">邀请维修中心 / 首页</a></span>
+					                        </li>
+					                        <li>
+					                            <span><a target='_blank' href="">邀请维修中心 / 首页</a></span>
+					                        </li>
+					                        <li>
+					                            <span><a target='_blank' href="">邀请维修中心 / 首页</a></span>
+					                        </li>
+					                        <li>
+					                            <span><a target='_blank' href="">邀请维修中心 / 首页</a></span>
+					                        </li>
+					                    </ul>
+			                        </li>
+			                        <li  data-options="state:'closed'">
+			                            <span><a target='_blank'  href="/p.php?m=p&c=demand">服务需求</a></span>
+			                            <ul>
+					                        <li>
+					                            <span><a target='_blank' href="/p.php?m=p&c=demand">服务需求 / 首页</a></span>
+					                        </li>
+					                        <li>
+					                            <span><a target='_blank' href="/p.php?m=p&c=demand&v=add">服务需求 / 发布需求 </a></span>
+					                        </li>
+					                        <li>                    
+					                            <span><a target='_blank' href="/p.php?m=p&c=demand&v=bind">服务需求 / 绑定问卷 </a></span>
+					                        </li>
+					                        <li>
+					                            <span><a target='_blank' href="/p.php?m=p&c=demand&v=survey"> 服务需求 / 需求详情 </a></span>
+					                        </li>
+					                        <li>
+					                            <span><a target='_blank' href="/p.php?m=p&c=demand&v=authorised"> 服务需求 / 直接授权 </a></span>
+					                        </li>
+					                    </ul>
+			                        </li>
+			                        <li  data-options="state:'closed'">
+			                            <span>资质审查</span>
+			                            <ul>
+					                        <li>
+					                            <span><a target='_blank' href="/p.php?m=p&c=qualification">资质审查 / 首页</a></span>
+					                        </li>
+					                        <li>
+					                            <span><a target='_blank' href="/p.php?m=p&c=qualification&v=add">资质审查 / 新增问卷</a></span>
+					                        </li>
+					                        <li>                    
+					                            <span><a target='_blank' href="/p.php?m=p&c=qualification&v=bind">资质审查 / 导入问卷 </a></span>
+					                        </li>
+					                        <li>
+					                            <span><a target='_blank' href="/p.php?m=p&c=qualification&v=verify"> 资质审查 / 审核问卷</a></span>
+					                        </li>
+					                    </ul>
+			                        </li>
+			                        <li  data-options="state:'closed'">
+			                            <span><a href="/p.php?m=p&c=Authorised" target='_blank'>授权管理</a></span>
+			                            <ul>
+					                        <li>
+					                            <span><a target='_blank' href="/p.php?m=p&c=Authorised">授权管理 / 首页</a></span>
+					                        </li>
+					                        <li>
+					                            <span><a target='_blank' href="/p.php?m=p&c=Authorised&v=authorised">授权管理 / 许可证管理 / 授权</a></span>
+					                        </li>
+					                        <li>                    
+					                            <span><a target='_blank' href="/p.php?m=p&c=Authorised&v=authorisedQuestion">授权管理 / 许可证管理 / 问卷授权</a></span>
+					                        </li>
+					                        <li>
+					                            <span><a target='_blank' href="/p.php?m=p&c=Authorised&v=addQuestion"> 服务授权 / 资质审查  /  新增问卷</a></span>
+					                        </li>
+					                    </ul>
+			                        </li>
+			                    </ul>
+	                        </li>
+	                        <li  data-options="state:'closed'">
+	                            <span>服务设定</span>
+	                            <ul>
+			                        <li  data-options="state:'closed'">
+			                            <span>服务设定</span>
+			                            <ul>
+					                        <li>
+					                            <span><a target='_blank' href="/p.php?m=p&c=priceSetting">服务设定 / 维修中心清单</a></span>
+					                        </li>
+					                        <li>
+					                            <span><a target='_blank' href="/p.php?m=p&c=priceSetting&v=condition">服务设定 / 选定的维修中心名称</a></span>
+					                        </li>
+					                        <li>                    
+					                            <span><a target='_blank' href="/p.php?m=p&c=priceSetting&v=add">服务设定 / 选定的维修中心名称 / 新增</a></span>
+					                        </li>
+					                        <li>
+					                            <span><a target='_blank' href="/p.php?m=p&c=priceSetting&v=edit"> 服务设定 / 选定的维修中心名称  /  编辑</a></span>
+					                        </li>
+					                        <li>
+					                            <span><a target='_blank' href="/p.php?m=p&c=priceSetting&v=survey"> 服务设定 / 选定的维修中心名称  /  查看</a></span>
+					                        </li>
+					                    </ul>
+			                        </li>
+			                    </ul>
+	                        </li>
+	                        <li  data-options="state:'closed'">
+	                            <span>工程支援</span>
+	                            <ul>
+			                        <li data-options="state:'closed'">
+			                            <span><a target='_blank' href="/p.php?m=p&c=WorkInstruction">作业指导</a></span>
+			                            <ul>
+					                        <li>
+					                            <span><a target='_blank' href="/p.php?m=p&c=WorkInstruction">作业指导 / 首页</a></span>
+					                        </li>
+					                        <li>
+					                            <span><a target='_blank' href="/p.php?m=p&c=WorkInstruction&v=open">作业指导 / 开放管理</a></span>
+					                        </li>
+					                    </ul>
+			                        </li>
+			                        <li  data-options="state:'closed'">
+			                            <span><a target='_blank' href="/p.php?m=p&c=component">物料管理</a></span>
+			                            <ul>
+					                        <li>
+					                            <span><a target='_blank' href="/p.php?m=p&c=component">物料管理 / 首页</a></span>
+					                        </li>
+					                        <li>
+					                            <span><a target='_blank' href="/p.php?m=p&c=component&v=suppliment">物料管理 / 选定的维修中心名称</a></span>
+					                        </li>
+					                    </ul>
+			                        </li>
+			                        <li  data-options="state:'closed'">
+			                            <span><a target='_blank' href="">备品管理</a></span>
+			                            <ul>
+					                        <li>
+					                            <span><a target='_blank' href="">备品管理 / 首页</a></span>
+					                        </li>
+					                        <li>
+					                            <span><a target='_blank' href="">备品管理 / 选定的维修中心名称</a></span>
+					                        </li>
+					                    </ul>
+			                        </li>
+			                    </ul>
+	                        </li>
+	                        <li data-options="state:'closed'">
+	                            <span>服务流程</span>
+	                            <ul>
+			                        <li data-options="state:'closed'">
+			                            <span>流程模板</span>
+			                        </li>
+			                        <li >
+			                            <span><a target='_blank'  href="/p.php?m=p&c=workflow">流程设定</a></span>
+			                            <ul>
+					                        <li>
+					                            <span><a target='_blank' href="/p.php?m=p&c=workflow">流程设定 / 首页</a></span>
+					                        </li>
+					                        <li>
+					                            <span><a target='_blank' href="/p.php?m=p&c=workflow&v=add">流程设定 / 添加服务流程</a></span>
+					                        </li>
+					                        <li>
+					                            <span><a target='_blank' href="/p.php?m=p&c=workflow&v=edit">流程设定 / 编辑服务流程</a></span>
+					                        </li>
+					                        <li>
+					                            <span><a target='_blank' href="/p.php?m=p&c=workflow&v=site">流程设定 / 站点流程设定</a></span>
+					                        </li>
+					                        <li>
+					                            <span><a target='_blank' href="/p.php?m=p&c=workflow&v=leading">流程设定 / 导入流程设定</a></span>
+					                        </li>
+					                    </ul>
+			                        </li>
+			                    </ul>
+	                        </li>
+	                        <li data-options="state:'closed'">
+	                            <span>进度追踪</span>
+	                            <ul>
+			                        <li >
+			                            <span><a  target='_blank' href="/p.php?m=p&c=Process">进度追踪</a></span>
+			                            <ul>
+					                        <li>
+					                            <span><a target='_blank' href="/p.php?m=p&c=Process">进度追踪 / 首页</a></span>
+					                        </li>
+					                        <li>
+					                            <span><a target='_blank' href="/p.php?m=p&c=Process&v=pctls">进度追踪 / 产品列表</a></span>
+					                        </li>
+					                        <li>
+					                            <span><a target='_blank' href="/p.php?m=p&c=Process&v=survey">进度追踪 / 服务进度详情</a></span>
+					                        </li>
+					                        
+					                    </ul>
+			                        </li>
+			                    </ul>
+	                        </li>
+	                        <li data-options="state:'closed'">
+	                            <span>统计分析</span>
+	                            <ul>
+			                        <li >
+			                            <span><a target='_blank' href="/p.php?m=p&c=CloseAnalysis">结案分析</a></span>
+			                        </li>
+			                        <li >
+			                            <span><a target='_blank' href="/p.php?m=p&c=Confirm">维修中心绩效</a></span>
+			                        </li>
+			                    </ul>
+	                        </li>
+	                    </ul>
+                    </li>
+                    <li  data-options="state:'closed'">
+                        <span>大数据</span>
+                    </li>
+                </ul>
+        	</li>
+        	        	
+        	//维修中心后台
+        	<li data-options="state:'closed'">
+            	<span><b>维修中心后台</b></span>
+            	<ul>
+                    <li data-options="state:'closed'">
+                        <span>基本资料</span>
+                        <ul>
+	                        <li data-options="state:'closed'">
+	                            <span>基本资料</span>
+	                            <ul>
+			                        <li>
+			                            <span><a target='_blank' href="">基本资料 / 首页</a></span>
+			                        </li>
+			                    </ul>
+	                        </li>
+	                        <li data-options="state:'closed'">
+	                            <span>账号管理</span>
+	                        </li>
+	                        <li data-options="state:'closed'">
+	                            <span>个人资讯</span>
+	                        </li>
+	                    </ul>
+                    </li>
+                    <li  data-options="state:'closed'">
+                        <span>业务厂家</span>
+                        <ul>
+	                        <li data-options="state:'closed'">
+	                            <span>邀请厂家</span>
+	                        </li>
+	                        <li>
+	                            <span>服务需求</span>
+	                            <ul>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=demand">服务需求 / 首页</a></span>
+			                        </li>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=demand&v=add">服务需求 / 发布需求</a></span>
+			                        </li>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=demand&v=survey">服务需求 / 需求详情</a></span>
+			                        </li>
+			                    </ul>
+	                        </li>
+	                        <li  data-options="state:'closed'">
+	                            <span>提交资质资料</span>
+	                            <ul>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=qualification">提交资质资料 / 首页</a></span>
+			                        </li>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=qualification&v=edit">提交资质资料 / 填写问卷</a></span>
+			                        </li>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=qualification&v=survey">提交资质资料 / 问卷详情</a></span>
+			                        </li>
+			                    </ul>
+	                        </li>
+	                        <li data-options="state:'closed'">
+	                            <span>授权业务</span>
+	                            <ul>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=Authorised">授权业务 / 首页</a></span>
+			                        </li>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=Authorised&v=apply">授权业务 / 申請授權</a></span>
+			                        </li>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=Authorised&v=survey">授权业务 / 授权详情</a></span>
+			                        </li>
+			                    </ul>
+	                        </li>
+	                    </ul>
+                    </li>
+                    <li data-options="state:'closed'">
+                        <span>服务设定</span>
+                        <ul>
+	                        <li>
+	                            <span><a target='_blank' href="/p.php?m=r&c=priceSetting">服务设定 / 首页</a></span>
+	                        </li>
+	                        <li>
+	                            <span><a target='_blank' href="/p.php?m=r&c=priceSetting&v=condition">服务设定 / 选定的厂家名称</a></span>
+	                        </li>
+	                        <li>
+	                            <span><a target='_blank' href="/p.php?m=r&c=priceSetting&v=survey">服务设定 / 选定的厂家名称 / 查看</a></span>
+	                        </li>
+	                    </ul>
+                    </li>
+                    <li data-options="state:'closed'">
+                        <span>工程支援</span>
+                        <ul>
+	                        <li data-options="state:'closed'">
+	                            <span>作业指导</span>
+	                        </li>
+	                        <li data-options="state:'closed'">
+	                            <span>物料管理</span>
+	                        </li>
+	                        <li data-options="state:'closed'">
+	                            <span>备品管理</span>
+	                        </li>
+	                    </ul>
+                    </li>
+                    <li >
+                        <span>服务流程</span>
+                        <ul>
+	                        <li data-options="state:'closed'">
+	                            <span>流程一览</span>
+	                        </li>
+	                        <li data-options="state:'closed'">
+	                            <span><a target='_blank' href="/p.php?m=r&c=BusinessAccept">业务受理</a></span>
+	                            <ul>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=BusinessAccept">业务受理 / 首页</a></span>
+			                        </li>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=BusinessAccept&v=warema">业务受理 / 派工 WareMa#详情</a></span>
+			                        </li>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=BusinessAccept&v=waremas">业务受理 / WareMa#详情</a></span>
+			                        </li>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=BusinessAccept&v=survey">业务受理 / 业务详情</a></span>
+			                        </li>
+			                    </ul>
+	                        </li>
+	                    </ul>
+                    </li>
+                    <li >
+                        <span>进度管控</span>
+                        <ul>
+	                        <li data-options="state:'closed'">
+	                        	<span><a target='_blank' href="/p.php?m=r&c=ProgressUpdate">进度维护</a></span>
+	                            <ul>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=ProgressUpdate">进度维护 / 首页</a></span>
+			                        </li>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=ProgressUpdate&v=waremals">进度维护 / WareMa列表</a></span>
+			                        </li>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=ProgressUpdate&v=pctls">进度维护 / 进度维护（管理员）</a></span>
+			                        </li>
+			                    </ul>
+	                        </li>
+	                        <li  data-options="state:'closed'">
+	                            <span><a target='_blank' href="/p.php?m=r&c=Abnormal">异常回报</a></span>
+	                            <ul>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=Abnormal">异常回报 / 首页</a></span>
+			                        </li>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=Abnormal&v=Control">异常回报 / 异常管控</a></span>
+			                        </li>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=Abnormal&v=handling">异常回报 / 异常处理</a></span>
+			                        </li>
+			                    </ul>
+	                        </li>
+	                        <li data-options="state:'closed'">
+	                            <span><a target='_blank' href="/p.php?m=r&c=Settlement">服务结算</a></span>
+	                            <ul>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=Settlement">服务结算 / 首页</a></span>
+			                        </li>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=Settlement&v=waremas">服务结算 / 服务结算</a></span>
+			                        </li>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=Settlement&v=pctls">服务结算 / 产品清单</a></span>
+			                        </li>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=Settlement&v=survey">服务结算 / 产品详情</a></span>
+			                        </li>
+			                    </ul>
+	                        </li>
+	                    </ul>
+                    </li>
+	                <li data-options="state:'closed'">
+                        <span>收发管理</span>
+                        <ul>
+	                        <li data-options="state:'closed'">
+	                            <span>收发货管理</span>
+	                        </li>
+	                    </ul>
+                    </li>
+                    <li>
+                        <span>统计查询</span>  
+                        <ul>
+	                        <li >
+	                            <span><a target='_blank' href="/p.php?m=r&c=Summary">任务汇总</a></span>
+	                            <ul>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=Summary">任务汇总 / WareMa#</a></span>
+			                        </li>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=Summary#tabl2">任务汇总 / 服务项目</a></span>
+			                        </li>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=Summary&v=pctls">任务汇总 / 产品清单</a></span>
+			                        </li>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=Summary&v=survey">任务汇总 / 详情</a></span>
+			                        </li>
+			                    </ul>
+	                        </li>
+	                        <li >
+	                            <span><a target='_blank'  href="/p.php?m=r&c=Costaccount">费用核算</a></span>
+	                       		<ul>
+	                       			<li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=Costaccount">费用核算 / 首页</a></span>
+			                        </li>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=Costaccount&v=rmals">费用核算 / WareMa#</a></span>
+			                        </li>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=Costaccount&v=rmals#tabl2">费用核算 / 服务项目</a></span>
+			                        </li>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=Costaccount&v=pctls">费用核算 / 费用核算</a></span>
+			                        </li>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=Costaccount&v=survey">费用核算 / 详情</a></span>
+			                        </li>
+			                    </ul>
+	                        </li>
+	                        <li >
+	                            <span><a target='_blank'  href="/p.php?m=r&c=score">绩效评分</a></span>
+	                            <ul>
+	                       			<li>
+			                            <span><a target='_blank'  href="/p.php?m=r&c=score">绩效评分 / 首页</a></span>
+			                        </li>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=score&v=rmals">绩效评分 / 产品清单</a></span>
+			                        </li>
+			                        <li>
+			                            <span><a target='_blank' href="/p.php?m=r&c=score&v=survey">绩效评分 / 产品详情</a></span>
+			                        </li>
+			                    </ul>
+	                        </li>
+	                    </ul>
+                    </li>
+                </ul>
+        	</li>
+        	
+        	//客户后台
+        	<li data-options="state:'closed'">
+            	<span><b>客户后臺</b></span>
+            	<ul>
+                    <li  data-options="state:'closed'">
+                        <span>保修管理</span>
+                    </li>
+                    <li  data-options="state:'closed'">
+                        <span>维修服务</span>
+                        <ul>
+	                        <li data-options="state:'closed'">
+	                            <span>服务进度</span>
+	                            <ul>
+			                        <li data-options="state:'closed'">
+			                            <span>服务进度</span>
+			                        </li>
+			                    </ul>
+	                        </li>
+	                        <li data-options="state:'closed'">
+	                            <span><a target='_blank'  href="/p.php?m=u&c=servaluation">费用核算</a></span>
+	                            <ul>
+			                        <li data-options="state:'closed'">
+			                            <span>服务评价</span>
+			                        </li>
+			                    </ul>
+	                        </li>
+	                        <li data-options="state:'closed'">
+	                            <span>保修预测</span>
+	                            <ul>
+			                        <li data-options="state:'closed'">
+			                            <span>保修量预测</span>
+			                        </li>
+			                        <li data-options="state:'closed'">
+			                            <span>订单预测</span>
+			                        </li>
+			                    </ul>
+	                        </li>
+	                    </ul>
+                    </li>
+                </ul>
+        	</li>
+        </ul>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,778 @@
+ <!-- START BLOCK : index -->
+
+ <!--==========================
+   Banner Section
+ ============================-->
+<section id="banner" style="margin-top: 0px;">
+    <div class="banner-container">
+        <div id="bannerCarousel" class="carousel  slide carousel-fade" data-ride="carousel">
+			<ol class="carousel-indicators"></ol>
+			<div class="carousel-inner" role="listbox">
+				<div class="carousel-item active" style="background-image: url('asset/src/203/img/home/banner/bigdataHBanner.jpg');">
+					<div class="carousel-container">
+						<div class="carousel-content animated fadeInLeft">
+							<h2 >大数据功能全新上线</h2>
+							<p>保修分析逆向运筹，模型预估降低风险</p>
+							<a href="#" class="btn-get-started">观看案例</a>
+						</div>
+					</div>
+				</div>
+				
+				<div class="carousel-item" style="background-image: url('asset/src/203/img/home/banner/warrantyHBanner.jpg');">
+					<div class="carousel-container">
+						<div class="carousel-content animated fadeInLeft">
+							<h2>保修作业云端管理</h2>
+							<p>保修作业管理分析，云端建制实时追踪</p>
+							<a href="#s" class="btn-get-started">观看案例</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-item" style="background-image: url('asset/src/203/img/home/banner/apiHBanner.jpg');">
+					<div class="carousel-container ">
+						<div class="carousel-content animated fadeInLeft">
+							<h2>API·串聯成功</h2>
+							<p>重要客户成功串联，内部系统轻松操作</p>
+							<p>还在寻找解决方案？来wareconn试试吧</p>
+							<a href="#" class="btn-get-started">观看案例</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-item" style="background-image: url('asset/src/203/img/home/banner/appHBanner.jpg');">
+					<div class="carousel-container ">
+						<div class="carousel-content animated fadeInLeft">
+							<h2>APP全新上线</h2>
+							<p>手機操作服務排程，派工現場上傳記錄</p>
+							<a href="#" class="btn-get-started">观看案例</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="carousel-item" style="background-image: url('asset/src/203/img/home/banner/saleHBanner.jpg');">
+					<div class="carousel-container">
+						<div class="carousel-content animated fadeInLeft">
+							<h2>限时优惠</h2>
+							<p>各项产品限时优惠，低价享受最优体验</p>
+							<a href="#" class="btn-get-started">观看案例</a>
+						</div>
+					</div>
+				</div>		  
+			</div>
+			<a class="carousel-control-prev" href="#bannerCarousel" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon fa fa-angle-left" aria-hidden="true"></span>
+			   <span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#bannerCarousel" role="button" data-slide="next">
+				<span class="carousel-control-next-icon fa fa-angle-right" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>	
+        </div>
+    </div>
+</section><!-- #Banner -->
+  
+  <!--==========================
+    Performance Section
+  ============================-->
+<section id="performance">
+    <div class="container">
+		<header class="section-header wow fadeInUp">
+		    <h3>平台数据展示 让事实说实话</h3>		  
+		</header>
+		<div class="row row-bg1 wow fadeInUp">         
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 box box-bg1">				  
+				<h4 class="title"><a href="">公司</a></h4>
+				<p id="num1" class="description"></p>
+			</div>
+	  
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 box box-bg2">				  
+				<h4 class="title"><a href="">料号</a></h4>
+				<p id="num2" class="description"></p>
+			</div>
+	  
+			<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 box box-bg3">				  
+				<h4 class="title"><a href="">产品</a></h4>
+				<p id="num3" class="description"></p>
+			</div>  
+		</div>
+    </div>
+</section><!-- #Performance -->
+
+<script type="text/javascript">
+		
+		var options = {
+			useEasing : true,
+			useGrouping : true,
+			
+		};
+
+		var demo = new CountUp('num1', 0, 344, 0, 7, options);
+		if (!demo.error) {
+		    demo.start();
+		} else {
+		    console.error(demo.error);
+		}
+		
+		var demo = new CountUp('num2', 0, 17738, 0, 7, options);
+		if (!demo.error) {
+		    demo.start();
+		} else {
+		    console.error(demo.error);
+		}
+		
+		var options = {
+			useEasing : true,
+			useGrouping : true,
+			suffix: 'K',
+		};
+		
+        var demo = new CountUp('num3', 0, 126543, 0, 7, options);
+        if (!demo.error) {
+            demo.start();
+        } else {
+            console.error(demo.error);
+        }
+		
+		window.onscroll = function() {
+		  myFunction()
+		};
+		
+		function myFunction() {
+		  var bodyScrollTop = document.documentElement.scrollTop || document.body.scrollTop; //this makes it work in all browsers
+		  var height = document.getElementById("services").clientHeight; //the height of the previous div for example
+		  
+		  
+		  if (bodyScrollTop > height) {
+		    demo.start();
+		  } else {
+		    console.error(demo.error);
+		  }
+		}
+		
+</script>
+
+  <!--==========================
+    Intro Section
+  ============================-->
+<section  id="intro">
+	<div class="container">
+		<div class="row ">
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 box wow bounceInUp" data-wow-duration="1.4s">
+				<div class="intro-item hvr-icon-pulse-shrink">
+					<li class="fa fa-diamond hvr-icon"></li><h4>免费体验</h4>
+					<p>
+						进入试用站，免费试用平台功能
+					</p>
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 box wow bounceInUp" data-wow-duration="1.4s">
+				<div class="intro-item hvr-icon-pulse-shrink">
+					<li class="fa fa-television hvr-icon"></li><h4>在线学习</h4>
+					<p>
+						查看线上资料，详细了解平台
+					</p>								
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 box wow bounceInUp" data-wow-duration="1.4s">
+				<div class="intro-item hvr-icon-pulse-shrink">
+					<li class="fa fa-sitemap hvr-icon"></li><h4>API文档</h4>
+					<p>
+						丰富平台功能，连接无线可能
+					</p>								
+				</div>
+			</div>
+			<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 box wow bounceInUp" data-wow-duration="1.4s">
+				<div class="intro-item hvr-icon-pulse-shrink">
+					<li class="fa fa-rocket hvr-icon"></li><h4>推广合作</h4>
+					<p>
+						引领售后服务行业，助力合作共赢
+					</p>				
+				</div>
+			</div>			
+		</div>
+	</div>	
+</section>
+<!-- End Intro -->	
+  
+  <!--==========================
+    AboutUs
+  ============================-->
+<section id="aboutUs" class="wow fadeIn">
+    <div class="container text-center wow fadeInUp">
+        <h3>最好用的产品售后服务管理沟通平台</h3>
+	</div>
+	<div class="container text-left wow fadeInUp">  
+        <p>wareconn 保修云功能在建立企业间（B2B）保修云管理与分析平台，提供厂家、客户、服务中心，以及相关逆向运筹产业者在产品售后服务作业管理的沟通平台。</P>
+
+        <p>透过此平台的运作，让制造商可以追踪用户端，外地仓库/经销商/代理商电商，确保产品退回保修或派工保养等逆向运筹作业管理，不论是保修合约管理，返修作业申请，进度追踪，备品管理，服务中心认证，派工服务排程，以及透过巨量保修资料，运用大数据统计保修数据，监测产品良率，智慧模拟后续返修品的风险分析，都可以在此wareconn 保修云平台找到解决方案，协助企业主提升产业竞争力。</P>
+
+        <p>平台以云端管理模式建置，同时配以APP移动端，结合原制造商现有制造与销售大资料的管理，可以有效即时追踪产品售前与售后品质， 提升客户满意度，降低运营风险。 </p>
+    </div>
+	<div class="container text-center wow fadeInUp">
+	    <a class="cta-btn" href="#">关于我们</a>
+    </div>
+</section><!-- #AboutUs -->
+  
+   <!--==========================
+      advantage
+    ============================-->
+<section id="advantage" class="section-bg">
+    <div class="container-fluid">
+        <div class="justify-content-center align-items-center">
+			<div class="col-lg-7 about-img wow fadeInLeft">
+				<img src="asset/src/203/img/home/hAdvantage.jpg" alt="">
+			</div>
+
+			<div class="container col-lg-5 content text-left " >
+				<h2 class="wow bounceInLeft" data-wow-duration="1s">为什么选择我们?</h2>
+				<ul class="wow bounceInLeft" data-wow-delay="0.1s" data-wow-duration="1s">
+				    <li>
+						<i class="fa fa-check-square-o"></i>
+						<span>产品退换透明作业</span>登录即可应用，进度即时查询，提升客户售后服务管理品质
+					</li>
+				    <li>
+						<i class="fa fa-check-square-o"></i>
+						<span>线上备品管理供给</span>提供客户及服务中心，支援备品先发后退模式，缩短维修作业时间
+					</li>
+				    <li>
+						<i class="fa fa-check-square-o"></i>
+						<span>审查、认证与评价体系</span>及时了解各地服务中心作业流程
+					</li>
+				    <li>
+						<i class="fa fa-check-square-o"></i>
+						<span>大数据</span>提供大数据产品返修预测解决方案，降低备料成本与客诉风险
+					</li>
+				    <li>
+						<i class="fa fa-check-square-o"></i>
+						<span>管理架构</span>专业售后服务保修云计算与管理架构，及时且弹性调整需求
+					</li>
+				    <li>
+						<i class="fa fa-check-square-o"></i>
+						<span>共用逆向运筹产业资讯</span>即时获取资源，布建专属保修服务网络
+					</li>
+				</ul>
+			</div>
+        </div>
+    </div>
+</section><!-- #advantage -->
+   <!--==========================
+      Capability
+    ============================-->
+ <section id="capability">
+ 	<div class="container">
+ 		<div class="row col-3 col-xs-12 col-sm-12 col-md-3 col-lg-3 ">							
+			<div class="capabilityTitle container text-center wow fadeInUp">
+				<div>
+					<h3>平台四大功能</h3>
+				</div>
+				<div>
+					<h5>整合产业链，快捷维修，实现流程透明管理</h5>
+					
+				</div>
+			</div>				
+ 		</div>
+ 		<div class="capabilityContent wow bounceInUp col-9 col-xs-12 col-sm-12 col-md-9 col-lg-9">
+ 			
+ 				<div class="capabilityBox col-xs-12 col-6 col-sm-6 col-md-6 col-lg-6">
+ 					<div class="capabilityBoxTop">
+ 						<img src="asset/src/203/img/home/intro/warrantyIcon.png">
+ 					</div>					
+					<div class="capabilityBoxBottom">
+						<h4>保修管理</h4>
+						<div class="h5">
+							<p>体验一站式产品退换维修与保养，让 wareconn 成为整合售后品质保证系统。</p>
+						</div>
+					</div>				
+ 				</div>
+				<div class="capabilityBox col-xs-12 col-6 col-sm-6 col-md-6 col-lg-6">
+					<div class="capabilityBoxTop">
+						<img src="asset/src/203/img/home/intro/bigDateIcon.png">
+					</div>
+					<div class="capabilityBoxBottom">
+						<h4>大数据</h4>
+						<div class="h5">
+							<p>依托保修云， wareconn 平台可以提炼业务数据，以智能业务预测等实用功能，助力会员企业决胜商场。</p>
+						</div>
+					</div>
+				</div>
+ 				<div class="capabilityBox col-xs-12 col-6 col-sm-6 col-md-6 col-lg-6">
+ 					<div class="capabilityBoxTop">
+ 						<img src="asset/src/203/img/home/intro/repairIcon.png">
+ 					</div>
+					<div class="capabilityBoxBottom">
+						<h4>维修服务</h4>
+						<div class="h5">
+							<p>退换维修，当然选原装！ wareconn 加盟服务中心均是经过知名大厂严格审查认证。</p>
+						</div>
+					</div>					
+ 				</div>					
+ 				<div class="capabilityBox col-xs-12 col-6 col-sm-6 col-md-6 col-lg-6">
+ 					<div class="capabilityBoxTop">
+ 						<img src="asset/src/203/img/home/intro/industryIcon.png">
+ 					</div>					
+					<div class="capabilityBoxBottom">
+						<h4>产业资源</h4>
+						<div class="h5">
+							<p>共享全球逆向运筹资源，wareconn平台链接全球维修服务中心资源。</p>
+						</div>
+					</div>					
+ 				</div>		
+ 			
+ 		</div>
+ 	</div>
+ </section><!-- #Capability -->	
+   <!--==========================
+      Capability
+    ============================-->
+<!-- <section id="capability">
+ 	<div class="container">
+ 		<div class="row">							
+			<div class="container text-center wow fadeInUp">
+				<div>
+					<h3>平台四大功能</h3>
+				</div>
+			</div>				
+ 		</div>
+ 		<div class="row wow bounceInUp">
+ 			<div class="col-6 col-sm-6 col-md-3 col-lg-3 ">
+ 				<div class="capabilityBox">
+ 					<div class="capabilityBoxTop">
+ 						<img src="asset/src/203/img/home/intro/warrantyIcon.png">
+ 					</div>
+ 					<div class="capabilityBoxBottom">
+ 						<h4>保修管理</h4>
+ 						<h5>体验一站式产品退换维修与保养，让 wareconn 成为整合售后品质保证系统。</h5>
+ 					</div>
+ 				</div>				
+ 			</div>
+ 			<div class="col-6 col-sm-6 col-md-3 col-lg-3 ">
+ 				<div class="capabilityBox">
+ 					<div class="capabilityBoxTop">
+ 						<img src="asset/src/203/img/home/intro/bigDateIcon.png">
+ 					</div>
+ 					<div class="capabilityBoxBottom">
+ 						<h4>大数据</h4>
+ 						<h5>体验一站式产品退换维修与保养，让 wareconn 成为整合售后品质保证系统。</h5>
+ 					</div>
+ 				</div>		
+ 			</div>
+ 			<div class="col-6 col-sm-6 col-md-3 col-lg-3 ">
+ 				<div class="capabilityBox">
+ 					<div class="capabilityBoxTop">
+ 						<img src="asset/src/203/img/home/intro/repairIcon.png">
+ 					</div>
+ 					<div class="capabilityBoxBottom">
+ 						<h4>维修服务</h4>
+ 						<h5>体验一站式产品退换维修与保养，让 wareconn 成为整合售后品质保证系统。</h5>
+ 					</div>
+ 				</div>		
+ 			</div>
+ 			<div class="col-6 col-sm-6 col-md-3 col-lg-3 ">
+ 				<div class="capabilityBox">
+ 					<div class="capabilityBoxTop">
+ 						<img src="asset/src/203/img/home/intro/industryIcon.png">
+ 					</div>
+ 					<div class="capabilityBoxBottom">
+ 						<h4>产业资源</h4>
+ 						<h5>体验一站式产品退换维修与保养，让 wareconn 成为整合售后品质保证系统。</h5>
+ 					</div>
+ 				</div>		
+ 			</div>
+ 		</div>
+ 	</div>
+ </section> --><!-- #Capability -->
+ 
+  <!--==========================
+    Reverse Logistics
+  ============================-->
+<section id="reverseLogistics" class="wow fadeIn">
+	<div class="container">
+		<div class="container text-center wow fadeInUp">
+			<h3>逆向運籌</h3>
+		</div>
+		<div>
+			<img src="asset/src/203/img/home/reverseLogistics/reverseLogistics.png" width="100%" height="100%">
+		</div>
+	</div>
+</section><!-- #Reverse Logistics -->
+
+  <!--==========================
+    Industry
+  ============================-->
+<section id="industry" class="wow fadeIn">
+	<div>
+		<div class="container text-center wow fadeInUp">
+			<h3>产业范例</h3>
+		</div>
+		<div class="tabs">
+			<ul class="container tabs-list">
+				<li class="active">
+					<a href="javascript:;">
+						<div><img src="/asset/src/203/img/home/industry/dataCenterI.png" alt=""/></div>
+						<div><h4>数据中心</h4></div>
+					</a>
+				</li>
+				<li class="active">
+					<a href="javascript:;">
+						<div><img src="/asset/src/203/img/home/industry/componentsI.png" alt=""/></div>
+						<div><h4>零件供应</h4></div>
+					</a>
+				</li>
+				<li class="active">
+					<a href="javascript:;">
+						<div><img src="/asset/src/203/img/home/industry/brabdI.png" alt=""/></div>
+						<div><h4>品牌商</h4></div>
+					</a>
+				</li>
+				<li class="active">
+					<a href="javascript:;">
+						<div><img src="/asset/src/203/img/home/industry/deviceI.png" alt=""/></div>
+						<div><h4>设备供货</h4></div>
+					</a>
+				</li>
+				<li class="active">
+					<a href="javascript:;">
+						<div><img src="/asset/src/203/img/home/industry/serviceI.png" alt=""/></div>
+						<div><h4>维修中心</h4></div>
+					</a>
+				</li>
+				<li class="active">
+					<a href="javascript:;">
+						<div><img src="/asset/src/203/img/home/industry/manufactureI.png" alt=""/></div>
+						<div><h4>制造服务</h4></div>
+					</a>
+				</li>
+			</ul>
+		    <div class="tabs-container">				
+		    	<div class="tab-content" style="display:block;">
+					<div class="tab-content-0 tab-content-1">
+						<div class="container tab-text-right">
+							<h4>解决方法&nbsp<i class="fa fa-angle-right" ></i></h4>
+							<p>API串接自动化保修，快速响应</p>
+							<p>wareconn理顺不同模式、不同客户的多种售后业务</p>
+							<a href="#" class="btn-get-started">观看案例</a>
+						</div>
+						<div class="container tab-text-left">
+							<h4>问题概述&nbsp<i class="fa fa-angle-right" ></i></h4>
+							<p>服务器发生故障，位居世界品牌前5位的M客户通过多个系统进行报修</p>
+							<p>检修结果纸档记录无系统追踪</p>
+							<p>通过邮件发送维修报告无系统追踪</p>
+							<p>客户无法通过系统串接第三方服务公司及原厂服务流程</p>
+						</div>
+					</div>
+		        </div>
+		        <div class="tab-content">
+		        	<div class="tab-content-0 tab-content-2">
+		        		<div class="container tab-text-right">
+							<h4>解决方法&nbsp<i class="fa fa-angle-right" ></i></h4>
+		        			<p>批量送修，一键处理</p>
+		        			<p>支持现场不良判定，避免错误不必要的退运</p>
+		        			<a href="#" class="btn-get-started">观看案例</a>
+		        		</div>
+		        		<div class="container tab-text-left">
+		        			<h4>问题概述&nbsp<i class="fa fa-angle-right" ></i></h4>
+		        			<p>零件售后不易管理追踪历史返修记录</p>
+		        			<p>所有客户售后不良线下Execl分别记录，多文文件统计不便汇总</p>
+		        			<p>售后不良原厂提供的分析报告，无系统记录管理</p>
+		        			<p>零件商各批次不良分布在不同客户端，无法汇总比较各批次的质量状况</p>
+		        		</div>
+		        	</div>
+		        </div>
+		        <div class="tab-content">
+		        	<div class="tab-content-0 tab-content-3">
+		        		<div class="container tab-text-right">
+							<h4>解决方法&nbsp<i class="fa fa-angle-right" ></i></h4>
+		        			<p>运用自动化和集成化的功能简化流程、优化服务</p>
+		        			<p>无序开发，快速部署您的全球服务网络</p>
+		        			<a href="#" class="btn-get-started">观看案例</a>
+		        		</div>
+		        		<div class="container tab-text-left">
+		        			<h4>问题概述&nbsp<i class="fa fa-angle-right" ></i></h4>
+		        			<p>客户与供货商的保修合约无系统管理，查找不便易出错</p>
+							<p>供货商无法在线追踪服务中心站内作业情况，质量状况手动汇总，无法快速准确告知生产单位改善</p>
+							<p>费用结算耗时耗力且易遗漏出错</p>
+							<p>供货商无法通过系统追踪客户端及服务中心内作业进度，服务时长</p>
+		        		</div>
+		        	</div>
+		        </div>
+				<div class="tab-content">
+					<div class="tab-content-0 tab-content-4">
+						<div class="container tab-text-right">
+							<h4>解决方法&nbsp<i class="fa fa-angle-right" ></i></h4>
+							<p>服务记录APP现场上传，让服务更透明</p>
+							<p>退运业务、服务管理、运单、报告、账单全方位一站式作业管控</p>
+							<a href="#" class="btn-get-started">观看案例</a>
+						</div>
+						<div class="container tab-text-left">
+							<h4>问题概述&nbsp<i class="fa fa-angle-right" ></i></h4>
+							<p>无系统记录所有设备及备件的保修信息</p>
+							<p>纸档维修报告单易丢失且不易统计</p>
+							<p>费用结算线下作业，无法统计费用，不易汇总质量状况</p>
+							<p>客户无法通过系统透明化管理保修全流程</p>
+						</div>
+					</div>
+				</div>
+				<div class="tab-content">
+					<div class="tab-content-0 tab-content-5">
+						<div class="container tab-text-right">
+							<h4>解决方法&nbsp<i class="fa fa-angle-right" ></i></h4>
+							<p>增强您的业务流程，支持在线服务排程</p>
+							<p>整合全球服务系统，与您的车间管理和服务软件协同工作</p>
+							<a href="#" class="btn-get-started">观看案例</a>
+						</div>
+						<div class="container tab-text-left">
+							<h4>问题概述&nbsp<i class="fa fa-angle-right" ></i></h4>
+							<p>客户及生产制造商与服务中心系统无串接，服务中心无法提前做准备工作
+							<p>客户端退回之不良品并返还客户良品情况较混乱</p>
+							<p>服务中心内服务报告需线下邮寄给客户，易重复邮寄或遗漏</p>
+							<p>服务中心内维修费用手动汇总费时，不易统计费时费力</p>
+						</div>
+					</div>
+				</div>
+				<div class="tab-content">
+					<div class="tab-content-0 tab-content-6">
+						<div class="container tab-text-right">
+							<h4>解决方法&nbsp<i class="fa fa-angle-right" ></i></h4>
+							<p>整合、分析客户声音和服务数据，运用于制造质量改善</p>
+							<p>发掘退运业务的价值，助力业务升级</p>
+							<a href="#" class="btn-get-started">观看案例</a>
+						</div>
+						<div class="container tab-text-left">
+							<h4>问题概述&nbsp<i class="fa fa-angle-right" ></i></h4>
+							<p>各维修人员维修资料不能及时汇总，无法第一时间发现批量不良</p>
+							<p>统计汇总之维修数据无法及时有效的传送给生产单位及时改善</p>
+							<p>维修资料依靠人员手动汇总，易遗漏出错，查找历史记录不便</p>
+							<p>无法提前预知客户端将要返回的不良品，无法提前准备机台治具及人力安排</p>
+						</div>
+					</div>
+				</div>
+		    </div>
+		</div>
+	</div>
+</section><!-- #Industry -->
+
+<script type="text/javascript">
+$(document).ready(function(){
+	
+	$('.tabs').respTabs();
+	
+});
+
+;(function($){
+	$.fn.respTabs = function(options){
+		var defaults = {			
+			startIndex		: 0,					// 默认显示第几个
+			activeClass 	: 'active',				// 当前高亮的标识clss
+			model			: 'tabs',				// 插件模式: tabs 或 accordions
+			responsive		: true,					// 开启响应式，只在tabs模式有效
+			responsiveClass : 'responsive-tabs',	// 响应式Tab的标识class
+			fnEvent			: 'mouseover',				// 触发事件的类型，click 或 mouseover
+			toggles 		: false,				// 隐藏自身的切换，只在accordions模式有效
+			hidenContent	: false					// 默认隐藏Accordions内容，只在accordions模式有效
+        }
+        var options = $.extend(defaults, options);
+		
+		
+		//核心部分代码
+		return this.each(function() {
+	        var self = $(this);			
+			var tabList = self.find('.tabs-list');
+			var tabListItem = tabList.find('li');
+			var tabContent = '';
+			var accordionHandle = '';
+			var firstLoad = true;
+			
+			switch(options.model){
+				case 'tabs':
+					tabContent = self.children().children('.tab-content');
+					break;
+				case 'accordions':
+					tabContent = self.children('.accordion-content');
+					break;
+			}
+						
+			//开启响应式Tab
+			var addRepsAccording = function(){
+				self.addClass(options.responsiveClass);
+				tabListItem.each(function(){
+					var currentIndex = tabListItem.index($(this));
+					var accordionActiveCLass = $(this).hasClass(options.activeClass)? options.activeClass : '';
+					tabContent.eq(currentIndex).before('<div class="accordion-handle '+ accordionActiveCLass +'"><h4>'+ $(this).text() +'</h4><i></i></div>');		
+				});				
+				//accordionHandle = self.find('.accordion-handle');
+			},			
+			showTabs = function(index){				
+				tabListItem.eq(index).addClass(options.activeClass).siblings('li').removeClass('active '+options.activeClass);
+				tabContent.eq(index).show().siblings('.tab-content').hide();
+				
+				//高亮响应式Tab当前点击
+				if( options.responsive ){
+					accordionHandle = self.children().children('.accordion-handle');
+					accordionHandle.eq(index).addClass(options.activeClass).siblings('.accordion-handle').removeClass('active '+options.activeClass);
+				}
+			},			
+			showAccording = function(index){
+				accordionHandle = options.model == 'accordions' ? self.children('.accordion-handle') : self.children().children('.accordion-handle');
+				accordionHandle.eq(index).addClass(options.activeClass).siblings('.accordion-handle').removeClass('active '+options.activeClass);
+				tabContent.eq(index).slideDown().siblings('.tab-content, .accordion-content').slideUp();
+				
+				//高亮响应式Tab当前点击
+				if( options.responsive && tabListItem.length ){
+					tabListItem.eq(index).addClass(options.activeClass).siblings('li').removeClass('active '+options.activeClass);
+				}
+			},		
+			toggleAccording = function(index){
+				accordionHandle = self.find('.accordion-handle');				
+				if( firstLoad ){					
+					accordionHandle.eq(index).addClass(options.activeClass).siblings('.accordion-handle').removeClass('active '+options.activeClass);
+					tabContent.eq(index).slideDown().siblings('.tab-content, .accordion-content').slideUp('fast');					
+					firstLoad = false;
+				}else{
+					if( tabContent.eq(index).is(':hidden') ){						
+						tabContent.eq(index).slideDown();
+						accordionHandle.eq(index).addClass(options.activeClass);
+					}else{
+						tabContent.eq(index).slideUp();
+						accordionHandle.eq(index).removeClass('active '+options.activeClass);
+					}
+				}				
+			},
+			//隐藏According的内容
+			hideAccordingContent = function(){
+				tabContent.hide();
+				accordionHandle.removeClass('active '+options.activeClass);
+			}
+			
+			
+			//初始化函数
+			_init = function(){
+				if( options.model == 'tabs' ){
+					if( options.responsive ) addRepsAccording();
+					showTabs(options.startIndex); 
+					showAccording(options.startIndex);
+				}else{					
+					if( options.toggles ){											
+						toggleAccording(options.startIndex);
+	  				}else{				
+	  					showAccording(options.startIndex);
+					}
+					
+					if( options.hidenContent ) hideAccordingContent();
+				}			
+			}
+			_init();			
+			
+			tabListItem.bind( options.fnEvent, function(){
+				var currentIndex = tabListItem.index($(this));
+				showTabs(currentIndex);
+			});
+			
+			accordionHandle.bind( 'click', function(){
+				var currentIndex = accordionHandle.index($(this));		
+				
+				if( options.toggles && options.model == 'accordions' ){					
+					toggleAccording(currentIndex);
+				}else{
+					showAccording(currentIndex);
+				}
+			});
+			
+	        
+	    });//end this.each
+		
+	}
+})(jQuery);
+</script> 
+
+   <!--==========================
+      news
+    ============================-->
+<section class="md-section consult-background" id="news">
+ 	<div class="container">
+		<div class="container text-center wow fadeInUp" >
+			<h3>新闻中心</h3>
+		</div>				
+ 		<!-- carousel__element owl-carousel -->
+ 		<div class="carousel__element owl-carousel wow fadeIn" data-options='{"loop":false,"dots":false,"nav":true,"margin":30,"responsive":{"0":{"items":1},"768":{"items":2},"992":{"items":3}}}'>			
+ 			<!--  -->
+ 			<div class="newsBox">
+ 				<div class="post-01__media">
+					<a href="#"><img src="/asset/src/203/img/home/news/related-1.jpg" alt=""/></a>
+				</div>
+ 				<div class="newsTextBox">
+ 					<div class="post-01__time">Nov 16, 2017</div>
+ 					<div class="post-01__note">产品保修</div>
+					<div class="post-01__title">
+						<a href="#">改变家电售后行业畸形价值观</a>
+						<p>家电售后维修市场一直存在小病大修、以换代修、费用乱收等问题，消费者反应强烈。</p>
+					</div>				
+ 				</div>
+ 			</div><!-- End /  -->
+ 			 			
+ 			<!--  -->
+ 			<div class="newsBox">
+ 				<div class="post-01__media">
+					<a href="#"><img src="/asset/src/203/img/home/news/related-2.jpg" alt=""/></a>
+ 				</div>
+ 				<div class="newsTextBox">
+					<div class="post-01__time">Nov 4, 2017</div>
+					<div class="post-01__note">Services</div>
+ 					<div class="post-01__title">
+						<a href="#">Getting Started with Vue.Js</a>
+					</div> 					
+ 				</div>
+ 			</div><!-- End /  -->
+ 						
+ 			<!--  -->
+ 			<div class="newsBox">
+ 				<div class="post-01__media">
+					<a href="#"><img src="/asset/src/203/img/home/news/related-3.jpg" alt=""/></a>
+ 				</div>
+ 				<div class="newsTextBox">					
+ 					<div class="post-01__time">Nov 21, 2017</div>
+ 					<div class="post-01__note">Services</div>
+					<div class="post-01__title">
+						<a href="#">京东健康核酸检测团体预约全面开放</a>
+						<p>京东健康携手业内权威检测机构推出团体核酸检测预约服务，助力全国复工、复产、复学的顺利开展。</p>
+					</div>
+ 				</div>
+ 			</div><!-- End /  -->
+ 			 			
+ 			<!--  -->
+ 			<div class="newsBox">
+ 				<div class="post-01__media">
+					<a href="#"><img src="/asset/src/203/img/home/news/related-4.jpg" alt=""/></a>
+ 				</div>
+ 				<div class="newsTextBox">					
+ 					<div class="post-01__time">Nov 2, 2017</div>
+ 					<div class="post-01__note">Business</div>
+					<div class="post-01__title">
+						<a href="#">Free Sketch Plugins</a>
+					</div>
+ 				</div>
+ 			</div><!-- End /  -->
+ 			
+ 		</div><!-- End / carousel__element owl-carousel -->		
+ 	</div>
+</section><!-- #news -->
+
+  <!--==========================
+    Clients Section
+  ============================-->
+<section id="clients" class="wow fadeInUp">
+    <div class="container">
+        <h3>合作伙伴</h3>  
+		<div class="owl-carousel clients-carousel">
+			<img src="asset/src/203/img/home/clients/client-1.png" alt="">
+			<img src="asset/src/203/img/home/clients/client-2.png" alt="">
+			<img src="asset/src/203/img/home/clients/client-3.png" alt="">
+			<img src="asset/src/203/img/home/clients/client-4.png" alt="">
+			<img src="asset/src/203/img/home/clients/client-5.png" alt="">
+			<img src="asset/src/203/img/home/clients/client-6.png" alt="">
+			<img src="asset/src/203/img/home/clients/client-7.png" alt="">
+			<img src="asset/src/203/img/home/clients/client-8.png" alt="">
+		</div>  
+    </div>
+</section><!-- #clients -->
+
+  <!-- END BLOCK : index -->

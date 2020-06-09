@@ -1,0 +1,152 @@
+ <!-- START BLOCK : index -->
+ <link href="asset/src/203/css/DataCenter.css" rel="stylesheet"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+ <script src="asset/vendor/bootstrap/js/bootstrap_tab.js"></script> 
+
+ <!--==========================
+    Banner Section
+  ============================-->
+ <section id="banner" style="margin-top: 0px;">
+     <div class="banner-container">
+
+ 				<div class="carousel-item active" style="background-image: url('asset/src/203/img/survey/banner6.jpg');">
+ 					<div class="carousel-container">
+ 						<div class="carousel-content animated fadeInLeft">
+ 							<h2>制造服务案例</h2>
+ 						</div>
+ 					</div>
+ 				</div> 				
+
+     </div>
+ </section><!-- #Banner -->
+ 
+ <!--==========================
+    menu
+  ============================-->
+ <section id="menu" class="part">
+ 	<div id="menuContent" class="container text-center">
+ 		<ul>
+ 			<li class="menuLi col-lg-2 col-md-4 col-sm-4 col-xs-6" id="DataCenter">
+ 				<span class="menuTitle">数据中心</span>
+ 			</li>
+ 			<li class="menuLi col-lg-2 col-md-4 col-sm-4 col-xs-6" id="ComponentSupplier">
+ 				<span class="menuTitle">零件供应</span>
+ 			</li>
+ 			<li class="menuLi col-lg-2 col-md-4 col-sm-4 col-xs-6" id="BrandMaker">
+ 				<span class="menuTitle">品牌商</span>
+ 			</li>
+ 			<li class="menuLi col-lg-2 col-md-4 col-sm-4 col-xs-6" id="EquipmentSupplier">
+ 				<span class="menuTitle">设备供应商</span>
+ 			</li>
+ 			<li class="menuLi col-lg-2 col-md-4 col-sm-4 col-xs-6" id="ServiceCenter">
+ 				<span class="menuTitle">维修中心</span>
+ 			</li>
+ 			<li class="menuLi selected col-lg-2 col-md-4 col-sm-4 col-xs-6" id="ManufacturingService">
+ 				<span class="menuTitle">制造服务</span>
+ 			</li>
+ 		</ul>
+ 	</div>
+ </section><!-- #Banner -->
+ 
+ <!--==========================
+     Description
+   ============================-->
+ <section id="Description" class="wow fadeIn">
+    <div class="container text-center wow fadeInUp">
+         <h3>问题概述</h3>
+ 	</div>
+ 	<div class="container text-left wow fadeInUp">  
+         <p>鸿富锦E单位生产D客户服务器主板，因主板上某零件安装在边角上的凸出位置。客户端发生不良退回维修中心后，
+		 各维修员进行维修，维修完成后统计汇总不良时发现该零件破损掉PAD不良率高达30%，
+		 经分析确认在运输过程中该零件凸出主板边缘导致撞件破损。
+		 维修中心将维修数据mail邮寄给E单位研发及品质保证等单位进行改善。</p>		 		 
+    </div>
+ </section><!-- #Description -->
+ 
+ <!--==========================
+     Solution
+   ============================-->
+ <section id="solution">
+ 	<div class="container text-left">
+		<div class="row ">
+			<div class="img col-lg-3 col-md-3 col-sm-3 col-xs-12">
+				<img src="asset/src/203/img/survey/dataCenter/solution1.jpg" id="img1">
+			</div>
+			<div class="box col-lg-9 col-md-9 col-sm-9 col-xs-12">
+				<h2>各维修人员维修数据不能及时汇总，无法第一时间发现批量不良</h2>
+				<p class="flip flip1">解决方案</p>				 
+				<div class="panel panel1">
+				<p>各维修人员在wareconn保修云管理平台维修服务中维修作业，并将维修数据记录在进度维护中。</p>
+				</div>
+			</div>	
+			
+			<div class="img col-lg-3 col-md-3 col-sm-3 col-xs-12">
+				<img src="asset/src/203/img/survey/dataCenter/solution2.jpg" id="img2">
+			</div>
+			<div class="box col-lg-9 col-md-9 col-sm-9 col-xs-12">				
+				<h2>统计汇总之维修数据无法及时有效的传送给E单位及时改善</h2>
+				<p class="flip flip2">解决方案</p>				 
+				<div class="panel panel2">
+				<p>维修中心的维修报告E单位可随时在厂家后台/保修作业/追踪结案处查看服务中心的维修数据，
+				当维修中心有重大品质异常或批量不良时，E单位立即通知相关单位进行改善。</p>	
+				
+				</div>
+			</div>
+				
+			<div class="img col-lg-3 col-md-3 col-sm-3 col-xs-12">
+				<img src="asset/src/203/img/survey/dataCenter/solution3.jpg" id="img3">
+			</div>
+			<div class="box col-lg-9 col-md-9 col-sm-9 col-xs-12">
+				
+				<h2>维修数据依靠人员手动汇总，易遗漏出错查找历史记录不便，无法提前预知客户端将要返回的不良品，无法提前准备机台治具及人力安排。</h2>
+				<p class="flip flip3">解决方案</p>				 
+				<div class="panel panel3">
+				<p>维修中心可在统计查询中任务汇总查看各维修员记载的产品的历史作业记录，无需人员手动汇总给E单位，
+				E单位可在厂家后台/保修作业/追踪结案处查看维修中心的维修数据。</p>
+				
+				</div>
+			</div>
+			
+        </div> 	 		 
+    </div>
+ </section><!-- #Solution -->
+<script>
+
+	$(".flip1").click(function(){
+	    $(".panel1").slideToggle("slow");
+	});
+	$(".flip1").click(function(){
+		if ($("#img1").attr("src")=="asset/src/203/img/survey/dataCenter/solution1.jpg"){
+			$("#img1").attr("src","asset/src/203/img/survey/dataCenter/solution1_2.jpg")
+		}else {
+			$("#img1").attr("src","asset/src/203/img/survey/dataCenter/solution1.jpg")
+		}      
+	});
+	
+	$(".flip2").click(function(){
+	    $(".panel2").slideToggle("slow");
+	});
+	$(".flip2").click(function(){
+		if ($("#img2").attr("src")=="asset/src/203/img/survey/dataCenter/solution2.jpg"){
+			$("#img2").attr("src","asset/src/203/img/survey/dataCenter/solution2_2.jpg")
+		}else {
+			$("#img2").attr("src","asset/src/203/img/survey/dataCenter/solution2.jpg")
+		}      
+	});
+	
+	$(".flip3").click(function(){
+	    $(".panel3").slideToggle("slow");
+	});
+	$(".flip3").click(function(){
+		if ($("#img3").attr("src")=="asset/src/203/img/survey/dataCenter/solution3.jpg"){
+			$("#img3").attr("src","asset/src/203/img/survey/dataCenter/solution3_2.jpg")
+		}else {
+			$("#img3").attr("src","asset/src/203/img/survey/dataCenter/solution3.jpg")
+		}      
+	});
+	
+	
+</script>
+ 
+ 
+   <!-- END BLOCK : index -->

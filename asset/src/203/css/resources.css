@@ -1,0 +1,517 @@
+/* define bootstrap 5 columns */
+.col-xs-1-5,
+.col-sm-1-5,
+.col-md-1-5,
+.col-lg-1-5 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.col-xs-1-5 {
+    width: 20%;
+    float: left;
+}
+
+
+@media (min-width: 768px) {
+.col-sm-1-5 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 992px) {
+    .col-md-1-5 {
+        width: 20%;
+        float: left;
+    }
+}
+@media (min-width: 1200px) {
+    .col-lg-1-5 {
+        width: 20%;
+        float: left;
+    }
+}
+
+/*-----------------------------------------------
+/* resourcesIntro
+--------------------------------------------------*/
+#resourcesIntro{
+	background:url(../img/resources/intro/resourcesIntroB.jpg) fixed center center;
+	background-size: cover;
+	padding: 50px 0;
+}
+#resourcesIntro h3{
+	color: #000000;
+}
+#resourcesIntro p{
+	color: #000000;
+	font-weight: 300;
+}
+
+
+/*-----------------------------------------------
+/* resourcesAdvantage
+--------------------------------------------------*/
+#resourcesAdvantage{
+	background: #aececc;
+	padding: 50px 0;
+}
+#resourcesAdvantage h3{
+	color: #000000;
+}
+.resourcesAdvantage-item{
+	width: 100%;
+	background-color: #fff;
+	padding: 20px;
+	margin-top: 20px;
+}
+.resourcesAdvantage-item  p{
+	margin: 0;
+	font-weight: 300
+}
+.resourcesAdvantage-item  h4{
+	margin-bottom: 5px;
+	font-size: 20px;
+}
+.resourcesAdvantage-left{
+	color: #b6b6b6;
+	width: 66px;
+	height: 100px;
+	font-size: 48px;
+	float: left;
+	padding-right: 10px;
+	border-right: 1px solid #b6b6b6;
+	line-height: 90px;
+	text-align: center;
+	transition: 0.5s;
+}
+.resourcesAdvantage-item:hover
+.resourcesAdvantage-left{	
+	color: #06acac;
+	border-right: 1px solid #06acac;
+}
+.resourcesAdvantage-right{
+	color: #000000;
+	height: 100px;
+	padding-left: 80px;
+}
+
+
+/*-----------------------------------------------
+/* resourcesFunction
+--------------------------------------------------*/
+#resourcesFunction .container{
+	margin-top: 0;
+}
+#resourcesFunction{
+	padding: 50px 0;
+}
+#resourcesFunction h3{
+	color: #000000;
+}
+#resourcesFunction h4{
+	font-size: 20px;
+	color: #000000;
+}
+.resourcesFunction-item{
+	width: 100%;	
+	color: #000000;
+	padding: 0 20px 10px;
+	height: 70px;
+}
+.resourcesFunction-box-item{
+	height: 250px;
+	text-align: center;
+}
+.resourcesFunction-box-item0{
+	display: block;
+}
+.resourcesFunction-box-item .item-title {
+	position: relative;
+	margin-top: 50px;
+	transition: all .4s cubic-bezier(.4, 0, .2, 1);
+	text-align: center;
+}
+.resourcesFunction-box-item:hover .item-title{
+	margin-top: 15px;
+}
+.resourcesFunction-box-item .item-text {
+	transition: all .4s cubic-bezier(.4, 0, .2, 1);
+	opacity: 0;
+	margin-top: 10px;
+}
+.resourcesFunction-box-item:hover .item-text {
+	display: block;
+	opacity: 1;
+	margin-top: 0;
+}
+#resourcesFunction .hvr-box-shadow-outset:active,
+.hvr-box-shadow-outset:focus,
+.hvr-box-shadow-outset:hover{
+	box-shadow:0 5px 20px 5px rgba(0,0,0,0.1)
+}
+
+.hvr-sweep-to-top:before{
+	background-color: #e7e7e7;
+}
+
+.resourcesFunction-item  p{
+	margin: 0;
+	font-weight: 300
+}
+.resourcesFunction-item  h4{
+	margin-bottom: 5px;
+	font-size: 20px;
+}
+.customerFunction {
+	margin-top: 80px;
+}
+@media (max-width: 767px) {
+	.resourcesFunction-item{
+		padding:0 0 10px 0;
+	}
+	.resourcesFunction-box-item:hover .item-title{
+		margin-top: 5px;
+	}
+}
+
+
+/*-----------------------------------------------
+/* Category
+--------------------------------------------------*/
+.hex {
+	width:150px;
+	height:88px;
+	background-color: none;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;			
+	-webkit-background-size: auto 173px;							
+	-moz-background-size: auto 173px;							
+	-ms-background-size: auto 173px;							
+	-o-background-size: auto 173px;							
+	position: relative;
+	float:left;
+	margin:25px 5px;
+	text-align:center;
+	zoom:1;
+	transition: all 0.3s ;
+	-webkit-transition: all 0.3s ;
+	-moz-transition: all 0.3s ;
+	-ms-transition: all 0.3s ;
+}
+.hex.hex-0{
+	background-color: #fff;
+}
+		
+.hex.hex-gap1 {
+	margin-left: 186px;
+}
+.hex.hex-gap2 {
+	margin-left: 106px;
+}
+
+.hex .corner-1,
+.hex .corner-2 {
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	background: inherit;								
+	z-index:-2;						
+	overflow:hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;			
+	backface-visibility: hidden;			
+}
+
+.hex .corner-1 {
+	z-index:-1;
+	-webkit-transform: rotate(60deg);
+	-moz-transform: rotate(60deg);
+	-ms-transform: rotate(60deg);
+	-o-transform: rotate(60deg);
+	transform: rotate(60deg);
+}
+
+.hex .corner-2 {
+	-webkit-transform: rotate(-60deg);
+	-moz-transform: rotate(-60deg);
+	-ms-transform: rotate(-60deg);
+	-o-transform: rotate(-60deg);
+	transform: rotate(-60deg);
+}
+
+.hex .corner-1:before,
+.hex .corner-2:before {
+	width: 173px;
+	height:	173px;
+	content: '';
+	position: absolute;
+	background: inherit;
+	top:0;
+	left: 0;
+	z-index: 1;
+	background: inherit;
+	background-repeat:no-repeat;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;	
+	backface-visibility: hidden;				  
+}			
+
+
+.hex .corner-1:before {
+	-webkit-transform: rotate(-60deg) translate(-87px, 0px);
+	-moz-transform: rotate(-60deg) translate(-87px, 0px);
+	-ms-transform: rotate(-60deg) translate(-87px, 0px);
+	-o-transform: rotate(-60deg) translate(-87px, 0px);
+	transform: rotate(-60deg) translate(-87px, 0px);	
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -o-transform-origin: 0 0;
+    transform-origin: 0 0;
+}			
+
+.hex .corner-2:before {
+	-webkit-transform: rotate(60deg) translate(-43px, -11px);
+	-moz-transform: rotate(60deg) translate(-43px, -11px);
+	-ms-transform: rotate(60deg) translate(-43px, -11px);
+	-o-transform: rotate(60deg) translate(-43px, -11px);
+	transform: rotate(60deg) translate(-43px, -11px);	
+	bottom:0;
+}
+.hex hr {
+	border:0;
+	border-top:1px solid #000000;
+	width:60%;
+	margin:15px auto;
+}
+.hex .inner {		
+		color:#000000;
+		transition: all 0.3s ;
+		-webkit-transition: all 0.3s ;
+		-moz-transition: all 0.3s ;
+		-ms-transition: all 0.3s ;
+}
+.hex-1:hover{
+	background-color:#03adaa;
+	transition: all 0.3s ;
+	-webkit-transition: all 0.3s ;
+	-moz-transition: all 0.3s ;
+	-ms-transition: all 0.3s ;
+}
+.hex-4:hover{
+	background-color:#03adaa;
+	transition: all 0.3s ;
+	-webkit-transition: all 0.3s ;
+	-moz-transition: all 0.3s ;
+	-ms-transition: all 0.3s ;
+}
+.hex-2:hover{
+	background-color:#0088d2;
+	transition: all 0.3s ;
+	-webkit-transition: all 0.3s ;
+	-moz-transition: all 0.3s ;
+	-ms-transition: all 0.3s ;
+}
+.hex-5:hover{
+	background-color:#0088d2;
+	transition: all 0.3s ;
+	-webkit-transition: all 0.3s ;
+	-moz-transition: all 0.3s ;
+	-ms-transition: all 0.3s ;
+}
+.hex-3:hover{
+	background-color:#2d4f74;
+	transition: all 0.3s ;
+	-webkit-transition: all 0.3s ;
+	-moz-transition: all 0.3s ;
+	-ms-transition: all 0.3s ;
+}
+.hex-6:hover{
+	background-color:#2d4f74;
+	transition: all 0.3s ;
+	-webkit-transition: all 0.3s ;
+	-moz-transition: all 0.3s ;
+	-ms-transition: all 0.3s ;
+}
+.hex-0:hover .inner p{
+	color: #fff	
+}
+.hex-1:hover .corner-1{
+	background-color:#03adaa;
+	transition: all 0.3s ;
+	-webkit-transition: all 0.3s ;
+	-moz-transition: all 0.3s ;
+	-ms-transition: all 0.3s ;
+}
+.hex-1:hover{
+	background-image:url(../img/resources/category/WarrantyProvider2.png);
+}
+.hex-1{
+	background:url(../img/resources/category/WarrantyProvider.png) no-repeat center;
+}
+.hex-2:hover{
+	background-image:url(../img/resources/category/Logistics2.png);
+}
+.hex-2{
+	background:url(../img/resources/category/Logistics.png) no-repeat center;
+}
+.hex-3:hover{
+	background-image:url(../img/resources/category/ServiceCenter2.png);
+}
+.hex-3{
+	background:url(../img/resources/category/ServiceCenter.png) no-repeat center;
+}
+.hex-4:hover{
+	background-image:url(../img/resources/category/MaterialEquipment2.png);
+}
+.hex-4{
+	background:url(../img/resources/category/MaterialEquipment.png) no-repeat center;
+}
+.hex-5:hover{
+	background-image:url(../img/resources/category/RecycleCenter2.png);
+}
+.hex-5{
+	background:url(../img/resources/category/RecycleCenter.png) no-repeat center;
+}
+.hex-6:hover{
+	background-image:url(../img/resources/category/CallCenter2.png);
+}
+.hex-6{
+	background:url(../img/resources/category/CallCenter.png) no-repeat center;
+}
+.icon{
+	height: 60px;
+}
+#category{
+	background:url(../img/resources/category/categoryB.jpg) fixed center center;
+	background-size: cover;
+	padding: 50px 0;
+}
+#category a{
+	color: #000000;
+}
+#category h3{
+	color: #000000;
+	margin-bottom: 80px;
+}
+#category p{
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 20px;
+}
+
+@media (min-width: 1440px){
+	#category .container{
+		width: 1170px;
+	}	
+}
+
+@media (max-width: 1024px) {
+    .hex.hex-gap1 {
+    	margin-left: 106px;
+    }
+    .hex.hex-gap2 {
+    	margin-left: 25px;
+    }
+	.hex.hex-gap3 {
+		margin-left: 106px;
+	}
+	.hex.hex-gap4 {
+		margin-left: 4px;
+	}
+	.hex-display {
+		display: none;
+	}
+}
+@media (max-width: 768px) {
+	.hex.hex-gap5 {
+		margin-left: 146px;
+	}
+	.hex.hex-gap3 {
+		margin-left: 4px;
+	}
+	.hex.hex-gap2 {
+		margin-left: 65px;
+	}
+	.hex.hex-gap6 {
+		margin-left: 65px;
+	}
+	.hex-display2 {
+		display: none;
+	}
+	.hex-display {
+		display: inherit;
+	}
+}
+@media (max-width: 430px) {
+	.hex-display3 {
+		display: none;
+	}
+	.hex.hex-gap2 {
+		margin-left: 105px;
+	}
+	.hex.hex-gap4 {
+		margin-left: 105px;
+	}
+	.hex.hex-gap5 {
+		margin-left: 25px;
+	}
+	.hex.hex-gap6 {
+		margin-left: 25px;
+	}
+	.hex.hex-gap7 {
+		margin-left: 25px;
+	}
+	.hex.hex-gap8 {
+		margin-left: 105px;
+	}
+	.hex-display {
+		display: none;
+	}
+}
+@media (max-width: 320px) {
+	.hex-display3 {
+		display: none;
+	}
+	.hex.hex-gap2 {
+		margin-left: 85px;
+	}
+	.hex.hex-gap4 {
+		margin-left: 85px;
+	}
+	.hex.hex-gap5 {
+		margin-left: 5px;
+	}
+	.hex.hex-gap6 {
+		margin-left: 5px;
+	}
+	.hex.hex-gap7 {
+		margin-left: 5px;
+	}
+	.hex.hex-gap8 {
+		margin-left: 85px;
+	}
+	.hex-display {
+		display: none;
+	}
+}
+#category .animated {
+    animation-duration: 10s;
+}
+@keyframes shake{
+	10%, 30%, 50%, 70%, 90% {
+	    transform: translate3d(0,0,0);
+	}
+	20%, 40%, 60%, 80% {
+	    transform: translate3d(0,5px,0);
+	}
+}
